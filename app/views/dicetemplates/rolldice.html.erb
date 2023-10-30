@@ -1,10 +1,9 @@
-<h1>2d6</h1>
+<h1><%= @die%>d<%= @sides%></h1>
 
 <ul>
+    <% @rollresult.each do |roll| %>
     <li>
-      3
+      <%= roll %>
     </li>
-    <li>
-      1
-    </li>
+    <% end %>
 </ul>
